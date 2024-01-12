@@ -1,0 +1,32 @@
+.board_list {
+    list-style-type: none;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+}
+
+.board_title {
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+
+.board_list_item_title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.board_list_item_desc {
+    color: #94A3B8;
+    font-size: 12px;
+}
+
+
+
+.board_list_item {
+    display: grid;
+    grid-template-rows: auto auto;
+    row-gap: 12px;
+    border: 1px solid #94A3B8;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}

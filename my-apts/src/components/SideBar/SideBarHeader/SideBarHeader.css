@@ -1,0 +1,40 @@
+.sidebar_header {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    height: 70px;
+}
+.outer_ellipse {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    border: 5px solid blue;
+    position: relative;
+    justify-self: center;
+}
+.inner_ellipse {
+    width: 7.5px;
+    height: 7.5px;
+    border-radius: 50%;
+    border: 3px solid #BB80FF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    clip-path: ellipse(100px 5px at 50% 100%);
+}
+.sidebar_header_container {
+    display: grid;
+    column-gap: 5px;
+}
+.sidebar_header_expand_button {
+    border-width: 0px;
+    padding-block: 0px;
+    padding-inline: 0px;
+    background-color: transparent;
+    color: #94A3B8;
+}
+.sidebar_header_expand_button:hover {
+    color: #707b8b;
+}

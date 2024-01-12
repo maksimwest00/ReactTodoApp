@@ -1,0 +1,19 @@
+.body_main_container {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    row-gap: 40px;
+}
+.body_content_header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding-right: 25px;
+    padding-top: 75px;
+}
+.body_content_header_buttons {
+    justify-self: right;
+}
+.body_content {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 20px;
+}

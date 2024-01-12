@@ -1,0 +1,8 @@
+.content_body {
+    display: grid;
+    grid-template-rows: 71px 1fr;
+}
+.route_content {
+    padding-left: 25px;
+    padding-right: 25px;
+}

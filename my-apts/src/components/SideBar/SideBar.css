@@ -1,0 +1,37 @@
+.sidebar {
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    border-right: 1px solid gray;
+}
+@keyframes SideBarAnimationOut{
+    from {
+        width: 50px;
+    }
+    to {
+        width: 150px;
+    }
+}
+@keyframes SideBarAnimationIn{
+    from {
+        width: 150px;
+    }
+    to {
+        width: 50px;
+        .sidebar_header_container {
+            grid-template-columns: auto 1fr 1fr;
+        }
+    }
+}
+.sidebar.expanded {
+    animation: SideBarAnimationOut 0.3s forwards;
+}
+.sidebar.collapsed {
+    width: 50px;
+    animation: SideBarAnimationIn 0.3s forwards;
+    .sidebar_body_button {
+        grid-template-columns: auto;
+    }
+    .sidebar_body_button {
+        justify-items: center;
+    }
+}
